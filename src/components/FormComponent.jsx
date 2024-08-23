@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createUser } from "../api/apiClient";
+import logo from "../assets/download.png"; // Importing the logo image
+import Footer from "./Footer"; // Importing the Footer component
 
 const FormComponent = () => {
   const [formData, setFormData] = useState({
@@ -64,9 +66,10 @@ const FormComponent = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-lg p-8 bg-white shadow-lg rounded-lg mt-5 mb-5">
-        <h1 className="text-2xl font-semibold mb-6 bg-red-100  text-gray-700 text-center">
+    <div className="flex flex-col min-h-screen bg-gray-100">
+      <div className="flex-grow w-full max-w-lg p-8 bg-white shadow-lg rounded-lg mt-5 mb-5 mx-auto">
+        <img src={logo} alt="Company Logo" className="mx-auto mb-5" />
+        <h1 className="text-2xl font-semibold mb-6 text-gray-700 text-center">
           Please fill the following details
         </h1>
         <form onSubmit={handleSubmit}>
@@ -99,6 +102,7 @@ const FormComponent = () => {
             </div>
           ))}
 
+          {/* Industry Type Field */}
           <div className="mb-4">
             <label className="block text-gray-600 font-semibold mb-2">
               Industry Type
@@ -146,6 +150,7 @@ const FormComponent = () => {
             )}
           </div>
 
+          {/* Interested Field */}
           <div className="mb-4">
             <label className="block text-gray-600 font-semibold mb-2">
               Interested
@@ -194,6 +199,7 @@ const FormComponent = () => {
             )}
           </div>
 
+          {/* Upload Field */}
           <div className="mb-4">
             <label className="block text-gray-600 font-semibold mb-2">
               Upload Your Business Card (Optional)
@@ -209,12 +215,13 @@ const FormComponent = () => {
 
           <button
             type="submit"
-            className="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600"
           >
             Submit
           </button>
         </form>
       </div>
+      <Footer />
     </div>
   );
 };
