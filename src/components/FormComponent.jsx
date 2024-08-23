@@ -69,6 +69,10 @@ const FormComponent = () => {
     <div className="flex flex-col min-h-screen bg-gray-100">
       <div className="flex-grow w-full max-w-lg p-8 bg-white shadow-lg rounded-lg mt-5 mb-5 mx-auto">
         <img src={logo} alt="Company Logo" className="mx-auto mb-5" />
+        <h1 className="bg-green-100 px-3 font-semibold  py-6 mb-10 rounded text-center italic">
+          Thank You For Showing Interest In Our Product !
+        </h1>
+
         <h1 className="text-2xl font-semibold mb-6 text-gray-700 text-center">
           Please fill the following details
         </h1>
