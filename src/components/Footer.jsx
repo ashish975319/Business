@@ -7,9 +7,9 @@ const Footer = () => {
         <p className="text-sm">
           © {new Date().getFullYear()} Irix Technologies. All rights reserved.
         </p>
-        <p className="text-xs mt-2">
+        {/* <p className="text-xs mt-2">
           Designed with ❤️ using React and Tailwind CSS.
-        </p>
+        </p> */}
       </div>
     </footer>
   );
