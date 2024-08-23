@@ -58,7 +58,7 @@ const FormComponent = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-lg p-8 bg-white shadow-lg rounded-lg mt-5 mb-5">
         <h1 className="text-2xl font-bold mb-6 underline text-gray-700 text-center">
-          IRIX Business Info
+          Please fill the following details
         </h1>
         <form onSubmit={handleSubmit}>
           {[
