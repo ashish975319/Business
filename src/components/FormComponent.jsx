@@ -196,7 +196,7 @@ const FormComponent = () => {
 
           <div className="mb-4">
             <label className="block text-gray-600 font-semibold mb-2">
-              Photo (Optional)
+              Upload Your Business Card (Optional)
             </label>
             <input
               type="file"
